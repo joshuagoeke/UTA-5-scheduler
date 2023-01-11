@@ -2,6 +2,7 @@
 
 Starter code provided by: https://github.com/coding-boot-camp/crispy-octo-meme
 
+
 #Task: Make a work-day scheduler
 
 User Story
@@ -30,3 +31,6 @@ assets\images\05-third-party-apis-homework-demo.gif
 
 A user clicks on slots on the color-coded calendar and edits the events.
 
+Collaborators: https://github.com/ChrisZavala/
+
+Also thanks MJ for the idea of adding some late hours. Realistic, and helpful for testing: https://github.com/mjtic
