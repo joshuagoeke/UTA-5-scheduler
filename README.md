@@ -30,7 +30,7 @@ The following provided mock-up animation demonstrates the desired application fu
 
 Here's a still image of my program:
 
-
+![Some example time slots with items saved.](assets/images/workingScheduler.jpg?raw=true)
 
 
 
