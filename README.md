@@ -22,8 +22,10 @@ WHEN I click the save button for that timeblock
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
+
 The following animation demonstrates the application functionality:
 
+assets\images\05-third-party-apis-homework-demo.gif
 
 
 A user clicks on slots on the color-coded calendar and edits the events.
