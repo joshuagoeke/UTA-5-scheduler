@@ -2,7 +2,7 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(document).ready(function (){
-$(function () {
+// $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -21,22 +21,22 @@ $(function () {
   $(".time-block").each(function () {
     var blockNumber = $(this).attr("id").split("-")[1];
     console.log(blockNumber);
-    
+
     var currentTime = moment().hour();
 
-    if (blockNumber < currentTime) {
-      $(this).find(".description").removeClass("present");
-      $(this).find(".description").removeClass("future");
-      $(this).find(".description").addClass("past");
-    } else if (blockNumber == currentTime) {
-      $(this).find(".description").removeClass("past");
-      $(this).find(".description").removeClass("future");
-      $(this).find(".description").addClass("present");
-    } else {
-      $(this).find(".description").removeClass("past");
-      $(this).find(".description").removeClass("present");
-      $(this).find(".description").addClass("future");
-    }
+      if (blockNumber < currentTime) {
+        $(this).find(".description").removeClass("present");
+        $(this).find(".description").removeClass("future");
+        $(this).find(".description").addClass("past");
+      } else if (blockNumber == currentTime) {
+        $(this).find(".description").removeClass("past");
+        $(this).find(".description").removeClass("future");
+        $(this).find(".description").addClass("present");
+      } else {
+        $(this).find(".description").removeClass("past");
+        $(this).find(".description").removeClass("present");
+        $(this).find(".description").addClass("future");
+      }
   
   
   })
@@ -46,5 +46,5 @@ $(function () {
   // attribute of each time-block be used to do this?
 
   // TODO: Add code to display the current date in the header of the page.
-});
+  // });
 });
