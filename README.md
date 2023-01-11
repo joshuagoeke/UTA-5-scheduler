@@ -37,3 +37,5 @@ Here's a still image of my program:
 Collaborators: https://github.com/ChrisZavala/
 
 Also thanks MJ for the idea of adding some late hours. Realistic, and helpful for testing: https://github.com/mjtic
+
+See the application live here: https://joshuagoeke.github.io/UTA-5-scheduler/
