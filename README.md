@@ -24,12 +24,15 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 
-The following animation demonstrates the application functionality:
+The following provided mock-up animation demonstrates the desired application functionality:
 
-assets\images\05-third-party-apis-homework-demo.gif
+![A user clicks on slots on the color-coded calendar and edits the events.](assets/images/05-third-party-apis-homework-demo.gif?raw=true)
+
+Here's a still image of my program:
 
 
-A user clicks on slots on the color-coded calendar and edits the events.
+
+
 
 Collaborators: https://github.com/ChrisZavala/
 
