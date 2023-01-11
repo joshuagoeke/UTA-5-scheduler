@@ -10,8 +10,8 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
 
-  var currentTime = $("#currentTime");
-  currentTime.text(moment().format("dddd, MMM Do YYYY hh:mm:ss"));
+  var currentDayTime = $("#current-Day-Time");
+  currentDayTime.text(moment().format("dddd, MMM Do YYYY hh:mm:ss"));
 
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
@@ -21,6 +21,24 @@ $(function () {
   $(".time-block").each(function () {
     var blockNumber = $(this).attr("id").split("-")[1];
     console.log(blockNumber);
+    
+    var currentTime = moment().hour();
+
+    if (blockNumber < currentTime) {
+      $(this).find(".description").removeClass("present");
+      $(this).find(".description").removeClass("future");
+      $(this).find(".description").addClass("past");
+    } else if (blockNumber == currentTime) {
+      $(this).find(".description").removeClass("past");
+      $(this).find(".description").removeClass("future");
+      $(this).find(".description").addClass("present");
+    } else {
+      $(this).find(".description").removeClass("past");
+      $(this).find(".description").removeClass("present");
+      $(this).find(".description").addClass("future");
+    }
+  
+  
   })
   
   // TODO: Add code to get any user input that was saved in localStorage and set
