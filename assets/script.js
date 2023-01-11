@@ -45,6 +45,13 @@ $(document).ready(function (){
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
 
+
+  $(".saveBtn").on("click", function (event) {
+    var hourBlock = $(this).parent().attr("id").split("-")[1];
+    var thingToDo = $(this).parent().find(".description").val();
+    localStorage.setItem(hourBlock, thingToDo);
+    console.log(event);
+  });
   // TODO: Add code to display the current date in the header of the page.
   // });
 });
